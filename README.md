@@ -1,5 +1,6 @@
 Paste code from StackOverflow search result directly into Intellij
 
+![Intellij Howdoi direct paste plugin](/animation.gif)
 Inspired by [sublime-howdoi-direct-paste](https://github.com/azac/sublime-howdoi-direct-paste) and use [howdoi](https://github.com/gleitz/howdoi) script
 
 ### Install
