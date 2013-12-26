@@ -1,18 +1,15 @@
 <idea-plugin version="2">
-  <id>com.yourcompany.unique.plugin.id</id>
-  <name>Plugin display name here</name>
+  <id>jp.gr.java_conf.daisy.intellij_howdoi_plugin.HowdoiDirectPaste</id>
+  <name>HowdoiDirectPaste</name>
   <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <vendor email="d-part@hotmail.co.jp" url="https://github.com/daisy1754">Kazuki Nishiura</vendor>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <small>most HTML tags may be used</small>
+      Coding with less effort for boilerplate code :)<br>
+      Get code snippet using howdoi script
       ]]></description>
 
-  <change-notes><![CDATA[
-      Add change notes here.<br>
-      <small>most HTML tags may be used</small>
-      ]]>
+  <change-notes>
   </change-notes>
 
   <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->

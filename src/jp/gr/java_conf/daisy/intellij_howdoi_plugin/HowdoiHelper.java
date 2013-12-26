@@ -12,7 +12,7 @@ public class HowdoiHelper {
      */
     public List<String> getCodeSnippet(String query) {
         Runtime runtime = Runtime.getRuntime();
-        String path = this.getClass().getResource("howdoi.py").getPath();
+        String path = this.getClass().getResource("/howdoi.py").getPath();
         try {
             Process process = runtime.exec("python " + path + " " + query);
             BufferedReader bufferedReader = new BufferedReader(
