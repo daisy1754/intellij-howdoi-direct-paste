@@ -34,7 +34,9 @@
 
   <actions>
     <!-- Add your actions here -->
-    <action id="HowdoiPasteAction" class="HowdoiPasteAction" text="HowdoiDirectPaste"
+    <action id="jp.gr.java_conf.daisy.intellij_howdoi_plugin.HowdoiPasteAction"
+            class="jp.gr.java_conf.daisy.intellij_howdoi_plugin.HowdoiPasteAction"
+            text="HowdoiDirectPaste"
             description="Search code snippet using howdoi and paste it">
       <add-to-group group-id="CodeCompletionGroup" anchor="first"/>
       <keyboard-shortcut keymap="$default" first-keystroke="ctrl H" second-keystroke="ctrl D"/>

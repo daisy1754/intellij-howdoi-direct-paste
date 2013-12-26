@@ -1,3 +1,5 @@
+package jp.gr.java_conf.daisy.intellij_howdoi_plugin;
+
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.DataKeys;

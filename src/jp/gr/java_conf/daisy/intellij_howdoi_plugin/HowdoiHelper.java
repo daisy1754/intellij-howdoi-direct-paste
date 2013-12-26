@@ -1,3 +1,5 @@
+package jp.gr.java_conf.daisy.intellij_howdoi_plugin;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
