@@ -16,18 +16,30 @@ public class HowdoiPasteAction extends AnAction {
         int start = document.getLineStartOffset(position.line);
         String content = document.getText(new TextRange(start, start + position.column));
 
-        List<String> snippet = new HowdoiHelper().getCodeSnippet(content);
+        String headSpaces = getHeadSpaces(content);
+        List<String> snippet = new HowdoiHelper().getCodeSnippet(content.trim());
         if (snippet == null) {
             // TODO: error handling
         } else {
             document.deleteString(start, start + position.column);
-            document.insertString(start, join(snippet, '\n'));
+            document.insertString(start, headSpaces + join(snippet, "\n" + headSpaces));
             editor.getCaretModel().moveToLogicalPosition(
                     new LogicalPosition(position.line + snippet.size() - 1, 0));
         }
     }
 
-    private String join(List<String> lines, char separator) {
+    private String getHeadSpaces(String content) {
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < content.length(); i++) {
+            if (content.charAt(i) != ' ') {
+                break;
+            }
+            builder.append(' ');
+        }
+        return builder.toString();
+    }
+
+    private String join(List<String> lines, String separator) {
         StringBuilder builder = new StringBuilder();
         boolean firstLine = true;
         for (String line: lines) {
